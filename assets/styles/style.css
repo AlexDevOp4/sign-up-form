@@ -1,0 +1,180 @@
+body {
+	min-width: 500px; /* Suppose you want minimum width of 1000px */
+	width: auto !important; /* Firefox will set width as auto */
+	width: 1000px; /* As IE6 ignores !important it will set width as 1000px; */
+}
+
+.main-container {
+	display: flex;
+	background-color: white;
+	height: 100vh;
+	min-width: 50%;
+}
+/* ---Left Container --- */
+.left-container {
+	background-image: url('https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1862&q=80');
+	background-size: cover;
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: start;
+	padding-top: 150px;
+	position: relative;
+}
+
+.left-container > p {
+	font-size: 120px;
+	color: white;
+	margin-top: 70px;
+	font-family: 'Norse', sans-serif;
+	z-index: 1;
+}
+
+.left-container > img {
+	height: 150px;
+	padding-top: 50px;
+	z-index: 1;
+}
+
+.border-left {
+	border-width: 1px;
+	border-style: solid;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 0;
+	opacity: 0 - 1;
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	top: 170px;
+}
+
+a {
+	color: white;
+}
+
+footer {
+	position: absolute;
+	bottom: 10px;
+	color: white;
+}
+
+/* ---Right Container --- */
+
+.right-container {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: start;
+	gap: 80px;
+}
+
+.top,
+.bottom {
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+
+.top > p {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.left-form,
+.right-form {
+	flex-direction: column;
+	display: flex;
+	gap: 10px;
+}
+
+.middle {
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	border: 1px;
+	padding-left: 5rem;
+	padding-right: 5rem;
+	padding-bottom: 2rem;
+}
+
+form {
+	display: flex;
+	gap: 50px;
+}
+
+input {
+	border: 1px solid grey;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+	box-sizing: border-box;
+	height: 30px;
+	padding-left: 10px;
+	width: 205px;
+}
+
+/* ---Bottom Container --- */
+
+.bottom {
+	font-size: 20px;
+}
+
+button {
+	background-color: #497558;
+	border: 1px solid #497558;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	font-family: 'Akzidenz Grotesk BQ Medium', -apple-system, BlinkMacSystemFont,
+		sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	outline: none;
+	outline: 0;
+	padding: 10px 25px;
+	text-align: center;
+	transform: translateY(0);
+	transition: transform 150ms, box-shadow 150ms;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: 205px;
+}
+
+button:hover {
+	box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
+	transform: translateY(-2px);
+}
+
+span {
+	color: #497558;
+}
+
+@media only screen and (max-width: 600px) {
+	.main-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	h2,
+	.bottom,
+	.right-container {
+		text-align: center;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.left-container {
+		padding-top: 20px;
+	}
+
+	.border-left {
+		top: 40px;
+	}
+}

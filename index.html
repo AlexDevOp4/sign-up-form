@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/styles/style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<main class="main-container">
+			<article class="left-container">
+				<div class="border-left"></div>
+				<img src="./assets/odin-lined.png" alt="" />
+				<p>ODIN</p>
+				<footer>
+					Photo by
+					<a target=”_blank”  href="https://unsplash.com/@haliewestphoto"> Halie West</a> on
+					<a target=”_blank”  href="https://unsplash.com/photos/25xggax4bSA">Unsplashed</a>
+				</footer>
+			</article>
+			<article class="right-container">
+				<div class="top">
+					<p>
+						This is not a real online service! You know you need something like
+						this in your life to help you realize your deepest dreams.
+					</p>
+					<p>You know you want to</p>
+				</div>
+
+				<div class="middle">
+					<h2>Lets do this!</h2>
+					<div class="form">
+						<form action="https://httpbin.org/post" method="post">
+							<div class="left-form">
+								<div>
+									<label for="first_name">First Name:</label>
+									<br />
+									<input type="text" name="first_name" id="first_name" />
+								</div>
+
+								<div>
+									<label for="email">Email:</label>
+									<br />
+									<input type="email" name="email" id="email" />
+								</div>
+
+								<div>
+									<label for="password">Password</label>
+									<br />
+									<input type="password" name="password" id="password" />
+								</div>
+							</div>
+
+							<div class="right-form">
+								<div>
+									<label for="last_name">Last Name:</label>
+									<br />
+									<input type="text" name="last_name" id="last_name" />
+								</div>
+
+								<div>
+									<label for="phone-number">Phone Number:</label>
+									<br />
+									<input type="tel" name="phone-number" id="phone-number" />
+								</div>
+
+								<div>
+									<label for="confrim-password">Confirm Password</label>
+									<br />
+									<input
+										required
+										type="password"
+										name="confrim-password"
+										id="confrim-password" />
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="bottom">
+					<button type="submit">Create Account</button>
+					<p>Already have an account? <span>Login</span></p>
+				</div>
+			</article>
+		</main>
+	</body>
+</html>
